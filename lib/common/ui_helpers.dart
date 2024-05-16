@@ -1,7 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 
-late Size mq;
+const dw = SizedBox(width: 10);
+const dh = SizedBox(height: 10);
 
 const double _tinySize = 5.0;
 const double _smallSize = 10.0;
