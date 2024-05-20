@@ -1,4 +1,4 @@
-import 'package:user_repository/src/entities/user_entity.dart';
+import '../entities/entities.dart';
 
 class MyUser {
   String userId;
@@ -14,16 +14,16 @@ class MyUser {
   });
 
   static final empty = MyUser(
-    userId: '',
-    email: '',
-    name: '',
+		userId: '', 
+		email: '', 
+		name: '',
     hasActiveCart: false,
-  );
+	);
 
   MyUserEntity toEntity() {
     return MyUserEntity(
-      userId: userId,
-      email: email,
+      userId: userId, 
+      email: email, 
       name: name,
       hasActiveCart: hasActiveCart,
     );
@@ -31,10 +31,11 @@ class MyUser {
 
   static MyUser fromEntity(MyUserEntity entity) {
     return MyUser(
-        userId: entity.userId,
-        email: entity.email,
-        name: entity.name,
-        hasActiveCart: entity.hasActiveCart);
+      userId: entity.userId, 
+      email: entity.email, 
+      name: entity.name, 
+      hasActiveCart: entity.hasActiveCart
+    );
   }
 
   @override

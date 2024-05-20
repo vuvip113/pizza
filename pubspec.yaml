@@ -21,6 +21,9 @@ dependencies:
 
   user_repository:
     path: packages/user_repository
+  pizza_repository:
+    path: packages/pizza_repository
+  font_awesome_flutter: ^10.7.0
 
 dev_dependencies:
   flutter_test:
